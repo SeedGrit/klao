@@ -284,6 +284,67 @@ mechanical check เป็น advisory, คำตัดสินสุดท้�
   anchor — ไฟล์ `content-locale-humanize-th` ของเขาเขียนไว้เองว่ายังไม่มี Thai tell list
   ให้เกาะ (ยืนยันกับ maintainer ก่อนว่ารับ external anchor ไหม)
 
+## งาน 7 — `references/registers.md`: register ทางการ + บทพูด (กฎบางข้อกลับทิศ)
+
+> ที่มา: **corpus จริงชุดที่สอง** — ขุด before/after 82 คู่จากร่าง proposal ยื่นประมูลลูกค้า
+> องค์กรใหญ่ (draft ราย section → เล่มจริง) + สคริปต์ pitch/Q&A ของโปรเจกต์เดียวกัน
+> ข้อมูลดิบ (มีชื่อลูกค้า **ห้าม commit**): `docs/corpus-formal-proposal.local.json` (gitignored)
+> — session ที่ implement อ่านไฟล์นี้ได้เต็ม ๆ แต่ตัวอย่างที่ลง registers.md ต้อง genericize แล้ว
+
+การค้นพบหลัก: **กฎ klao เป็น register-sensitive** — corpus พิสูจน์ว่าใน "เอกสารทางการยื่น
+ลูกค้า/ประมูล" ทิศทางการเกลา*กลับด้าน*กับ UI/prose ทั่วไปหลายข้อ ไฟล์ registers.md จึงต้อง
+ระบุ ต่อ register ว่ากฎไหน ใช้ / กลับทิศ / ปิด (แบบ genre-gating ของ humanize-korean)
+
+### 7a. register `formal-proposal` — ตารางกฎกลับทิศ (จาก corpus)
+
+| กฎ casual | ใน formal-proposal |
+|---|---|
+| สั้นกว่า = คนกว่า | **กลับทิศ**: ร่าง AI แบบ telegraphic ถูกขยายเป็นประโยคทางการเต็ม สัญลักษณ์กลายเป็นคำ (`10+ ปี`→`ทศวรรษหน้า`, `+`→`มากกว่า`, `MD`→`Managing Director`, `จุฬาฯ`→ชื่อเต็ม) |
+| H8 ตัด hedge | **กลับทิศ**: คำเคลมเด็ดขาดถูก soften (`ไม่ผูกขาด`→`ลดความเสี่ยง…`, `ต้อง`→`ควร`, scare tactic ถูกลบ, เพิ่ม `อาจ`) |
+| E ตัดคำที่บริบทถือ | `บริษัทฯ` ต้องเป็นประธานซ้ำแทบทุกประโยคสำคัญ ห้ามตัด · แต่ qualifier แบบ `ในมุมมองของบริษัทฯ` ยังตัดได้ (E ใช้ได้เป็นจุด ๆ) |
+| ทำการ/มีการ = tell (งาน 2d) | **กลับทิศ**: คนเขียนเอง*เพิ่ม* `ทำการ+กริยา` `มีการ+นาม` `ดังนี้` `ดังกล่าว` เข้าไป — เป็น convention ของ register |
+| H3 ตัด closer | ตัดเฉพาะ closer **อวยตัวเอง** · closer ที่เป็น fact ตรวจสอบได้ กับย่อหน้าสรุปท้าย section เป็น convention เก็บไว้ |
+| H1 ไม่ใช่ X แต่ Y | ดู **function** ไม่ใช่ pattern: หางซ้ำหัว/เหน็บคู่แข่ง = ตัด · differentiation claim กับ ceremonial elevation (`ไม่ใช่เพียงการเลือกผู้ให้บริการ แต่คือการเลือกพันธมิตร…`) = วาทศิลป์ทางการแท้ เก็บ |
+| em-dash = tell อันดับ 1 | em-dash แทบไม่ปรากฏ — ตัวเชื่อมประจำ register คือ **`·`** ใช้เชื่อมประโยคเต็มด้วย: เก็บใน label/bullet/ตาราง ตัดเฉพาะ `·` ที่เชื่อมประโยคใน prose (กฎ "· = label separator เท่านั้น" ของเดิมแคบไป) |
+| jargon คงอังกฤษ | **เลือกทาง**: ศัพท์ที่มีคำไทยตรง → ไทย (`Locked`→`ห้ามเปลี่ยน`) หรือรูป "ไทยทางการ (English gloss)" · term of art คงอังกฤษ (Lump Sum, Go-live, Payroll) |
+
+กฎที่**ยืนยันว่าใช้ได้ข้าม register** (โดนแก้แม้ในเอกสารทางการ): A4 ตัดหางที่ซ้ำ label/หัวข้อ ·
+emoji ในเนื้อความ (`❌` ซ้ำคำว่าไม่ผ่าน) · ศัพท์ dev หลุด register (`Antipattern`) · overclaim
+(`หายากในตลาด`, `ตลอดกาล`, intensifier `จริง`) · diplomatic reframe (ห้ามบอกว่าลูกค้า "มีปัญหา"
+→ "ประเด็นที่องค์กรให้ความสำคัญ")
+
+**tell ใหม่จาก corpus นี้** (เข้า tells-th ได้เลย, ที่มา corpus):
+- **nominalization ลูกผสมไทย-อังกฤษ**: `ความ Stable นี้คือ Proof ว่า…`, `มี Combination ที่หายาก`,
+  `จะ Propose replacement` — โดน rewrite ทุกจุดใน corpus
+- **สัญลักษณ์แทนคำในเอกสารทางการ**: `20+`, `✓`, `❌`, `>30%` ใน prose (ไม่ใช่ตาราง) → เขียนเป็นคำ
+- **คำประดิษฐ์เอง vs ศัพท์มาตรฐาน**: `ตัววัดผล`→`ตัวชี้วัด` — AI ชอบ coin คำเลียนศัพท์จริง
+
+### 7b. register `spoken-pitch` — บทพูด/สคริปต์นำเสนอ
+
+- `ครับ/ค่ะ` ท้ายประโยค + กริยาถ่อมตัว `ขอ…` (ขอเล่า/ขอเน้น/ขอ commit) = โครงบังคับ ไม่ใช่ filler
+- คำขอบคุณเปิด-ปิด = ข้อบังคับ (กฎ G ปิดใน register นี้)
+- tricolon = message discipline ที่ตั้งใจ (H4 ปิด) · การซ้ำ frame ข้ามสไลด์ = ตั้งใจ ถ้าหางแบก
+  ข้อความขาย / = filler ถ้าหางแค่ปฏิเสธซ้ำหัว
+- ที่ยังใช้ได้: D ข้อสรุปขึ้นก่อน (Q&A ที่ดีเปิดด้วย verdict) · H8 ห้ามตอบ `เกือบครบ` ·
+  สูตรคืนอำนาจตัดสินใจให้ลูกค้าท้ายคำตอบเชิงเปรียบเทียบ = มารยาทบังคับ ไม่ใช่ hedge
+- em-dash บนสไลด์ (`**คีย์เวิร์ด** — คำขยาย`) เป็น layout device — ตัวแก้ที่ถูกคือ typography
+  (colon/ขึ้นบรรทัด) ไม่ใช่กฎ prose
+
+### 7c. ผลกระทบต่องานอื่น
+
+- **งาน 3 (false-positives):** เพิ่ม entry แบบ register-conditional จากตาราง 7a (ดังนี้/บริษัทฯ/
+  ทำการ ใน formal · ครับ+ขอ ใน spoken · `·` เชื่อมประโยคใน formal-proposal)
+- **งาน 5 (evals):** เพิ่มเคส register ละ ≥2 (เคส formal ที่คำตอบถูกคือ "ขยาย ไม่ใช่ตัด")
+- **template `repos.md`:** เพิ่มช่อง **คำต้องห้าม/คำบังคับรายโปรเจกต์** — corpus มีตัวอย่างจริง:
+  spec ของโปรเจกต์กำหนดคำเรียกงานอ้างอิงที่ห้ามใช้ด้วยเหตุผล NDA พร้อม checklist บังคับ —
+  กลไกเดียวกับที่ klao ควรมีให้ทุก repo
+- SKILL.md §1 (ขอบเขต): เพิ่มคำถามที่สาม — **register ไหน** (ui / prose / formal-proposal /
+  spoken-pitch) แล้วอ่าน registers.md เมื่อไม่ใช่สองอันแรก
+
+**Acceptance งาน 7:** registers.md มีตาราง กฎ×register (ใช้/กลับทิศ/ปิด) ครบทุกกฎหลัก ·
+ตัวอย่างทุกอันใน registers.md เป็นแบบ genericize (ไม่มีชื่อลูกค้า/โปรเจกต์/ตัวเลขสัญญา —
+เช็คด้วยสายตาก่อน commit เพราะ corpus ดิบมีข้อมูลลูกค้า) · เคส eval ฝั่ง formal ผ่าน check.sh
+
 ## ลำดับ commit แนะนำ
 
 1. `feat: rule IDs and severity on every tell` (งาน 1)
@@ -291,14 +352,16 @@ mechanical check เป็น advisory, คำตัดสินสุดท้�
 3. `feat: false positives get their own file, with a postmortem log` (งาน 3)
 4. `feat: four output modes and a preservation contract` (งาน 4)
 5. `feat: eval cases and a grep-only audit script` (งาน 5)
-6. `chore: changelog, upstream credits, readme` (งาน 6)
+6. `feat: registers — the rules that flip in formal and spoken Thai` (งาน 7 — ทำหลังงาน 3/5
+   เพราะเติม false-positives กับ eval cases)
+7. `chore: changelog, upstream credits, readme` (งาน 6)
 
 ทุก commit: subject บอกว่าของมันทำอะไรตอนนี้ (voice ตาม tells-en ท้ายไฟล์) · push ได้เลย
 repo public อยู่แล้ว
 
 ## Definition of done รวม
 
-- [ ] ทุกกฎ (เก่า+ใหม่) มี ID · ระดับ · ที่มา
+- [ ] ทุกกฎ (เก่า+ใหม่) มี ID · ระดับ · ที่มา **· ระบุ register ที่ใช้/กลับทิศ/ปิด**
 - [ ] `bash scripts/check.sh` เขียว
 - [ ] SKILL.md ยัง ≤ ~130 บรรทัด (ตอนนี้ ~110)
 - [ ] `grep -rn "team\|mu4\|seedgrit/team" --include='*.md' .` (นอก repos.local.md) = ว่าง
