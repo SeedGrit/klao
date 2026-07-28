@@ -330,7 +330,33 @@ emoji ในเนื้อความ (`❌` ซ้ำคำว่าไม่
 - em-dash บนสไลด์ (`**คีย์เวิร์ด** — คำขยาย`) เป็น layout device — ตัวแก้ที่ถูกคือ typography
   (colon/ขึ้นบรรทัด) ไม่ใช่กฎ prose
 
-### 7c. ผลกระทบต่องานอื่น
+### 7c. ตารางรวม กฎ × register (โครงตั้งต้นของ registers.md — เติมให้ครบจาก corpus)
+
+register มี 4 ค่า: `ui` (สตริงในจอ) · `prose` (บทความ/docs/commit) · `formal` (เอกสารยื่น
+ลูกค้า/ประมูล) · `spoken` (บทพูด/สคริปต์นำเสนอ) — ค่าในตาราง: ✓ ใช้ · ± ดูเงื่อนไข ·
+⇄ กลับทิศ · ✗ ปิด
+
+| กลุ่มกฎ | ui | prose | formal | spoken |
+|---|---|---|---|---|
+| A em-dash 4 ท่า | ✓ hard | ✓ | ✗ แทบไม่เจอ — ดูกฎ `·` แทน (เก็บใน label ตัดที่เชื่อมประโยคใน prose) | ✗ บนสไลด์เป็น layout device แก้ด้วย typography |
+| B/C empty state, placeholder | ✓ | – | – | – |
+| D ข้อสรุปขึ้นก่อน | ✓ | ✓ | ✓ | ✓ Q&A เปิดด้วย verdict |
+| E คำที่บริบทถือ | ✓ | ✓ | ± qualifier ตัดได้ แต่ `บริษัทฯ` ประธานซ้ำ = ห้ามตัด | ± |
+| G คำหยอด/ขอบคุณ | ✓ | ✓ | ± สูตรขอบคุณพิธีการ = เก็บ | ✗ ขอบคุณเปิด-ปิดเป็นข้อบังคับ |
+| H1 ไม่ใช่ X แต่ Y | ✓ | ✓ | ± ดู function: หางซ้ำหัว=ตัด, ceremonial=เก็บ | ± ดู function |
+| H3 closer | ✓ | ✓ | ± เฉพาะ closer อวยตัวเอง; สรุปท้าย section=เก็บ | ✗ peroration ต้องมี |
+| H4 tricolon | ✓ soft | ✓ soft | ± | ✗ เป็น message discipline |
+| H8 hedging | ✓ | ✓ | ⇄ ต้อง**เพิ่ม** hedge ลดคำเคลม | ✓ ห้ามตอบ "เกือบครบ" |
+| K สำนวนแปล (ทำการ/มีการ/ดังนี้) | ✓ | ✓ | ⇄ เป็น convention คนเขียนเติมเอง | ± |
+| L ตารางคำ AI | ✓ | ✓ | ✓ | ✓ |
+| heuristic "สั้นกว่า = คนกว่า" | ✓ | ✓ | ⇄ ขยาย telegraphic เป็นประโยคทางการเต็ม | ⇄ bullet → ประโยคพูดเต็ม+ครับ |
+| A4 หางซ้ำหัว/label · emoji ในเนื้อความ · overclaim · diplomatic reframe | ✓ | ✓ | ✓ (ยืนยันจาก corpus) | ✓ |
+
+**การเดา register (default — user บอกมาเมื่อไหร่ให้ชนะเสมอ):** string ใน component/i18n
+→ `ui` · md/docs/commit/บทความ → `prose` · เอกสารยื่นลูกค้า/ประมูล/สัญญา → `formal` ·
+สคริปต์พูด/demo/Q&A → `spoken` · ก้ำกึ่ง → ถาม (mode `ask`)
+
+### 7d. ผลกระทบต่องานอื่น
 
 - **งาน 3 (false-positives):** เพิ่ม entry แบบ register-conditional จากตาราง 7a (ดังนี้/บริษัทฯ/
   ทำการ ใน formal · ครับ+ขอ ใน spoken · `·` เชื่อมประโยคใน formal-proposal)
