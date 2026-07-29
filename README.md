@@ -28,7 +28,7 @@ Skill นี้ไม่ครอบคลุมการแปลภาษา �
 | ไฟล์ | มีอะไร |
 |---|---|
 | `SKILL.md` | workflow: ขอบเขต → สแกน → กฎไทย → ห้ามแตะ → gate → รายงาน |
-| `references/tells-th.md` | ตาราง before/after 8 หมวด สำหรับสตริงไทยและ prose ยาว |
+| `references/tells-th.md` | ตาราง before/after 9 หมวด สำหรับสตริงไทยและ prose ยาว |
 | `references/tells-en.md` | tells อังกฤษ เปิดด้วยรายการที่ห้ามแก้เพราะเป็นเสียงเจ้าของ |
 | `references/repos.md` | โครงสำหรับเขียนกฎเฉพาะราย repo ของคุณเอง |
 | `references/repos.local.md` | กฎจริงของ repo ส่วนตัว เขียนเองตามโครงข้างบน (gitignored) |

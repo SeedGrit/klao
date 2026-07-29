@@ -1,6 +1,12 @@
 # Tells ภาษาอังกฤษ (docs / commit body / PR body / README)
 
+> **ที่มาของไฟล์นี้ต่างจาก `tells-th.md`** corpus ทั้งสี่ชุดของ klao เป็นภาษาไทยล้วน
+> กฎอังกฤษที่เป็น**รายการคำ** จึงเป็น `borrowed` (Wikipedia: Signs of AI writing เป็นหลัก)
+> ส่วนกฎที่กลั่นจาก commit/PR ของเจ้าของเองเป็น `corpus` — ระบุไว้รายหมวด
+
 ## สิ่งที่ **ไม่ใช่** tell ใน repo พวกนี้ — อย่าไปแก้
+
+> EN-FP · corpus · เทียบจาก commit body เก่าของเจ้าของ — รายการนี้ชนะกฎทุกข้อข้างล่าง
 
 เสียงอังกฤษของเจ้าของอาจมีของที่ *ดูเหมือน* AI แต่เป็นลายเซ็นจริง เทียบจาก commit body
 เก่า ๆ ของเจ้าของเองก่อนตัดสินใจแก้อะไร ตัวอย่างที่พบบ่อย:
@@ -16,6 +22,8 @@
 
 ## A. คำที่เป็น tell ตรง ๆ
 
+> EN-01 · soft · borrowed · เป็น tell เมื่อ**ซ้ำ** หรือแทนคำธรรมดาได้ทันที ไม่ใช่เจอแล้วตัดทุกตัว
+
 `delve` · `leverage` (เป็นกริยา) · `robust` · `seamless` · `comprehensive` · `utilize` ·
 `facilitate` · `myriad` · `plethora` · `a testament to` · `the landscape of` · `the realm of` ·
 `tapestry` · `game-changer` · `unlock` · `empower` · `elevate` · `crucial` · `vital` ·
@@ -26,6 +34,8 @@
 
 ## B. หางประโยคที่พูดซ้ำสิ่งที่เพิ่งพูด
 
+> EN-02 · hard · borrowed · คู่ขนานกับ TH-UI-02 ฝั่งไทย
+
 - `This ensures that …`
 - `This allows you to …`
 - `, making it easier to …`
@@ -35,12 +45,16 @@
 
 ## C. กาวย่อหน้า
 
+> EN-03 · soft · borrowed · คู่ขนานกับหมวด J ฝั่งไทย (ตัดราวครึ่ง ไม่ใช่ทั้งหมด)
+
 `Additionally,` · `Furthermore,` · `Moreover,` · `That said,` (เมื่อไม่ได้ค้านอะไรจริง) ·
 `It's worth noting that` · `It's important to note that`
 
 ส่วนใหญ่ตัดทิ้งได้ทั้งคำ ประโยคยังอ่านต่อกันได้เอง
 
 ## D. รูปร่างเอกสารที่เป็น tell
+
+> EN-04 · soft · corpus · ข้อ 5–6 (PR body) มาจากวิธีเขียน PR ของเจ้าของเอง
 
 1. **Bullet list ที่มี `**bold label** —` ทุกข้อ** เป็นค่า default
    ใช้ bullet เมื่อของมันเป็นรายการจริง ๆ (สาม shape, สี่ไฟล์) ถ้าเป็นเหตุผลต่อเนื่อง ให้เขียน prose
@@ -53,6 +67,8 @@
 
 ## E. Hedging
 
+> EN-05 · soft · borrowed · **กลับทิศใน `formal`/`forecast`** เหมือน TH-PR-08
+
 `generally` · `typically` · `may potentially` · `might possibly` · `in most cases` ·
 `can sometimes`
 
@@ -60,11 +76,15 @@
 
 ## F. เปิดแบบประจบ
 
+> EN-06 · hard · borrowed
+
 `Great question!` · `Absolutely!` · `You're right to be concerned about …` — ตัดทั้งประโยค
 
 ---
 
 ## Commit subject — เสียงของ repo
+
+> EN-07 · soft · corpus · ยกมาจาก commit จริงของเจ้าของใน repo งานจริง (ไม่ได้อยู่ใน log ของ repo นี้)
 
 subject เป็น**ประโยคที่บอกว่าตอนนี้ของมันทำอะไร** ไม่ใช่ชื่องานที่ไปทำมา ตัวอย่างเสียงที่ใช้จริง:
 
