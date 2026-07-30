@@ -46,7 +46,7 @@ pnpm dev            # แล้วเปิด http://localhost:5173
 
 ส่วน "ดูผลที่ไหน" มีไว้เพราะเจ้าของบางคนรีวิวงานเกลาจาก**หน้าจอ** ไม่ใช่จาก diff — ตาราง
 before/after ตาม `SKILL.md` §7 ยังจำเป็น แต่ถ้าไม่บอก route เจ้าของต้องไล่หาจอเอง
-(คอร์ปัสที่เจ็ด · `false-positives.md` entry 2026-07-30)
+(คลังข้อมูลที่เจ็ด · `false-positives.md` entry 2026-07-30)
 
 ## เก็บ baseline กัน regression
 
