@@ -67,6 +67,7 @@ Skill นี้ไม่ครอบคลุมการแปลภาษา �
 | `references/tells-th.md` | ตาราง before/after 16 หมวด สำหรับสตริงไทยและ prose ยาว |
 | `references/tells-en.md` | tells อังกฤษ เปิดด้วยรายการที่ห้ามแก้เพราะเป็นเสียงเจ้าของ |
 | `references/false-positives.md` | ของที่ดูเหมือน tell แต่ห้ามแก้ พร้อมตัวเลขจากคลังข้อมูล |
+| `references/klon-paet.md` | กฎกลอนแปด 9 ข้อ พร้อมตัวเลขที่วัดจากนิราศภูเขาทอง 87 บท |
 | `references/repos.md` | โครงสำหรับเขียนกฎเฉพาะราย repo ของคุณเอง |
 | `references/repos.local.md` | กฎจริงของ repo ส่วนตัว เขียนเองตามโครงข้างบน (gitignored) |
 | `docs/examples.md` | ตาราง Before → After 17 กลุ่ม แยกเป็น UI · บทความ · ของที่ไม่แก้ · ด่านข้ามเอกสาร |
