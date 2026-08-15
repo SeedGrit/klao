@@ -1,0 +1,473 @@
+{
+ "nirat-mueang-klaeng": {
+  "bots": 247,
+  "violations": {
+   "TH-KL-05": 27,
+   "TH-KL-01": 33,
+   "TH-KL-02": 2,
+   "TH-KL-04": 8,
+   "TH-KL-03": 10,
+   "TH-KL-06": 5,
+   "TH-KL-10": 10
+  },
+  "syllables": {
+   "6": 3,
+   "7": 80,
+   "8": 662,
+   "9": 216,
+   "10": 25,
+   "11": 2
+  },
+  "inner_verse_pct": 53.23886639676113,
+  "inner_bot_pct": 95.54655870445345,
+  "verses": 988,
+  "dropped_weak_align": 0
+ },
+ "nirat-phra-bat": {
+  "bots": 230,
+  "violations": {
+   "TH-KL-04": 35,
+   "TH-KL-01": 40,
+   "TH-KL-05": 26,
+   "TH-KL-10": 9,
+   "TH-KL-03": 11,
+   "TH-KL-06": 8,
+   "TH-KL-02": 1
+  },
+  "syllables": {
+   "6": 6,
+   "7": 91,
+   "8": 532,
+   "9": 257,
+   "10": 32,
+   "11": 2
+  },
+  "inner_verse_pct": 38.15217391304348,
+  "inner_bot_pct": 86.52173913043478,
+  "verses": 920,
+  "dropped_weak_align": 0
+ },
+ "nirat-phu-khao-thong": {
+  "bots": 87,
+  "violations": {
+   "TH-KL-05": 16,
+   "TH-KL-10": 2,
+   "TH-KL-04": 9,
+   "TH-KL-01": 13,
+   "TH-KL-03": 12,
+   "TH-KL-02": 1,
+   "TH-KL-06": 1
+  },
+  "syllables": {
+   "6": 1,
+   "7": 35,
+   "8": 228,
+   "9": 78,
+   "10": 6
+  },
+  "inner_verse_pct": 58.9080459770115,
+  "inner_bot_pct": 97.70114942528735,
+  "verses": 348,
+  "dropped_weak_align": 0
+ },
+ "nirat-wat-chao-fa": {
+  "bots": 233,
+  "violations": {
+   "TH-KL-01": 33,
+   "TH-KL-04": 27,
+   "TH-KL-05": 24,
+   "TH-KL-10": 6,
+   "TH-KL-03": 13,
+   "TH-KL-06": 4,
+   "TH-KL-02": 4
+  },
+  "syllables": {
+   "6": 3,
+   "7": 72,
+   "8": 612,
+   "9": 219,
+   "10": 25,
+   "12": 1
+  },
+  "inner_verse_pct": 57.832618025751074,
+  "inner_bot_pct": 99.57081545064378,
+  "verses": 932,
+  "dropped_weak_align": 0
+ },
+ "nirat-i-nao": {
+  "bots": 100,
+  "violations": {
+   "TH-KL-01": 19,
+   "TH-KL-03": 8,
+   "TH-KL-04": 12,
+   "TH-KL-05": 16,
+   "TH-KL-10": 1,
+   "TH-KL-02": 1,
+   "TH-KL-06": 1
+  },
+  "syllables": {
+   "6": 1,
+   "7": 38,
+   "8": 282,
+   "9": 70,
+   "10": 9
+  },
+  "inner_verse_pct": 61.0,
+  "inner_bot_pct": 99.0,
+  "verses": 400,
+  "dropped_weak_align": 0
+ },
+ "nirat-phra-pathom": {
+  "bots": 223,
+  "violations": {
+   "TH-KL-01": 44,
+   "TH-KL-03": 13,
+   "TH-KL-04": 32,
+   "TH-KL-05": 26,
+   "TH-KL-10": 13,
+   "TH-KL-06": 5
+  },
+  "syllables": {
+   "6": 2,
+   "7": 71,
+   "8": 600,
+   "9": 191,
+   "10": 25,
+   "11": 2,
+   "12": 1
+  },
+  "inner_verse_pct": 56.16591928251121,
+  "inner_bot_pct": 98.65470852017937,
+  "verses": 892,
+  "dropped_weak_align": 0
+ },
+ "nirat-mueang-phet": {
+  "bots": 208,
+  "violations": {
+   "TH-KL-04": 24,
+   "TH-KL-05": 25,
+   "TH-KL-03": 19,
+   "TH-KL-01": 39,
+   "TH-KL-06": 9,
+   "TH-KL-10": 3,
+   "TH-KL-02": 2
+  },
+  "syllables": {
+   "6": 5,
+   "7": 45,
+   "8": 539,
+   "9": 219,
+   "10": 20,
+   "11": 4
+  },
+  "inner_verse_pct": 62.98076923076923,
+  "inner_bot_pct": 100.0,
+  "verses": 832,
+  "dropped_weak_align": 0
+ },
+ "ramphan-philap": {
+  "bots": 0,
+  "violations": {},
+  "syllables": {},
+  "inner_verse_pct": 0,
+  "inner_bot_pct": 0,
+  "verses": 0,
+  "dropped_weak_align": 218
+ },
+ "kho-but": {
+  "bots": 919,
+  "violations": {
+   "TH-KL-01": 316,
+   "TH-KL-05": 232,
+   "TH-KL-06": 53,
+   "TH-KL-10": 146,
+   "TH-KL-03": 95,
+   "TH-KL-04": 89,
+   "TH-KL-02": 8
+  },
+  "syllables": {
+   "2": 2,
+   "3": 12,
+   "4": 2,
+   "5": 11,
+   "6": 35,
+   "7": 429,
+   "8": 2170,
+   "9": 921,
+   "10": 87,
+   "11": 7
+  },
+  "inner_verse_pct": 41.29488574537541,
+  "inner_bot_pct": 90.31556039173014,
+  "verses": 3676,
+  "dropped_weak_align": 388
+ },
+ "phra-aphai-mani": {
+  "bots": 12546,
+  "violations": {
+   "TH-KL-04": 635,
+   "TH-KL-01": 2228,
+   "TH-KL-03": 1283,
+   "TH-KL-10": 717,
+   "TH-KL-06": 457,
+   "TH-KL-05": 1971,
+   "TH-KL-02": 204
+  },
+  "syllables": {
+   "5": 5,
+   "6": 230,
+   "7": 4319,
+   "8": 29467,
+   "9": 14007,
+   "10": 1924,
+   "11": 214,
+   "12": 17,
+   "13": 1
+  },
+  "inner_verse_pct": 59.805914235612946,
+  "inner_bot_pct": 98.8841064881237,
+  "verses": 50184,
+  "dropped_weak_align": 0
+ },
+ "sing-kraiphop": {
+  "bots": 2287,
+  "violations": {
+   "TH-KL-01": 860,
+   "TH-KL-05": 748,
+   "TH-KL-04": 121,
+   "TH-KL-03": 332,
+   "TH-KL-02": 28,
+   "TH-KL-06": 90,
+   "TH-KL-10": 506
+  },
+  "syllables": {
+   "1": 1,
+   "2": 2,
+   "3": 15,
+   "4": 3,
+   "5": 10,
+   "6": 39,
+   "7": 813,
+   "8": 5505,
+   "9": 2372,
+   "10": 355,
+   "11": 32,
+   "12": 1
+  },
+  "inner_verse_pct": 59.18233493659817,
+  "inner_bot_pct": 97.81372977700043,
+  "verses": 9148,
+  "dropped_weak_align": 1089
+ },
+ "laksanawong": {
+  "bots": 1219,
+  "violations": {
+   "TH-KL-01": 567,
+   "TH-KL-05": 530,
+   "TH-KL-10": 299,
+   "TH-KL-03": 180,
+   "TH-KL-06": 110,
+   "TH-KL-04": 164,
+   "TH-KL-02": 14
+  },
+  "syllables": {
+   "1": 7,
+   "2": 6,
+   "3": 18,
+   "4": 2,
+   "5": 17,
+   "6": 69,
+   "7": 635,
+   "8": 2815,
+   "9": 1146,
+   "10": 147,
+   "11": 13,
+   "12": 1
+  },
+  "inner_verse_pct": 35.438884331419196,
+  "inner_bot_pct": 83.34700574241181,
+  "verses": 4876,
+  "dropped_weak_align": 1085
+ },
+ "sawatdiraksa": {
+  "bots": 35,
+  "violations": {
+   "TH-KL-01": 7,
+   "TH-KL-05": 7,
+   "TH-KL-10": 2,
+   "TH-KL-03": 6,
+   "TH-KL-06": 1,
+   "TH-KL-04": 4
+  },
+  "syllables": {
+   "6": 1,
+   "7": 11,
+   "8": 79,
+   "9": 41,
+   "10": 8
+  },
+  "inner_verse_pct": 60.714285714285715,
+  "inner_bot_pct": 100.0,
+  "verses": 140,
+  "dropped_weak_align": 0
+ },
+ "phleng-yao-thawai-owat": {
+  "bots": 75,
+  "violations": {
+   "TH-KL-01": 17,
+   "TH-KL-05": 17,
+   "TH-KL-04": 4,
+   "TH-KL-10": 10,
+   "TH-KL-03": 7,
+   "TH-KL-06": 7
+  },
+  "syllables": {
+   "3": 2,
+   "4": 2,
+   "5": 1,
+   "6": 1,
+   "7": 21,
+   "8": 183,
+   "9": 73,
+   "10": 14,
+   "11": 3
+  },
+  "inner_verse_pct": 57.0,
+  "inner_bot_pct": 100.0,
+  "verses": 300,
+  "dropped_weak_align": 0
+ },
+ "suphasit-son-satri": {
+  "bots": 200,
+  "violations": {
+   "TH-KL-05": 29,
+   "TH-KL-01": 22,
+   "TH-KL-03": 16,
+   "TH-KL-04": 15,
+   "TH-KL-02": 3,
+   "TH-KL-06": 7,
+   "TH-KL-10": 8
+  },
+  "syllables": {
+   "6": 3,
+   "7": 33,
+   "8": 484,
+   "9": 254,
+   "10": 22,
+   "11": 4
+  },
+  "inner_verse_pct": 50.0,
+  "inner_bot_pct": 92.5,
+  "verses": 800,
+  "dropped_weak_align": 0
+ },
+ "phra-aphai-mani-later": {
+  "bots": 11795,
+  "violations": {
+   "TH-KL-03": 731,
+   "TH-KL-05": 1446,
+   "TH-KL-06": 575,
+   "TH-KL-01": 2264,
+   "TH-KL-04": 897,
+   "TH-KL-02": 232,
+   "TH-KL-10": 478
+  },
+  "syllables": {
+   "5": 8,
+   "6": 409,
+   "7": 4528,
+   "8": 26069,
+   "9": 13981,
+   "10": 2007,
+   "11": 167,
+   "12": 10,
+   "13": 1
+  },
+  "inner_verse_pct": 52.71089444679949,
+  "inner_bot_pct": 94.84527342094108,
+  "verses": 47180,
+  "dropped_weak_align": 9
+ },
+ "chantakhrop": {
+  "bots": 305,
+  "violations": {
+   "TH-KL-01": 134,
+   "TH-KL-03": 46,
+   "TH-KL-05": 129,
+   "TH-KL-04": 39,
+   "TH-KL-10": 76,
+   "TH-KL-06": 25,
+   "TH-KL-02": 3
+  },
+  "syllables": {
+   "1": 1,
+   "2": 1,
+   "3": 5,
+   "4": 2,
+   "5": 3,
+   "6": 17,
+   "7": 145,
+   "8": 701,
+   "9": 310,
+   "10": 32,
+   "11": 3
+  },
+  "inner_verse_pct": 37.704918032786885,
+  "inner_bot_pct": 85.24590163934427,
+  "verses": 1220,
+  "dropped_weak_align": 78
+ },
+ "nirat-phra-thaen-dong-rang": {
+  "bots": 239,
+  "violations": {
+   "TH-KL-01": 35,
+   "TH-KL-04": 35,
+   "TH-KL-03": 12,
+   "TH-KL-05": 37,
+   "TH-KL-10": 9,
+   "TH-KL-06": 9,
+   "TH-KL-02": 4
+  },
+  "syllables": {
+   "6": 9,
+   "7": 93,
+   "8": 646,
+   "9": 190,
+   "10": 17,
+   "12": 1
+  },
+  "inner_verse_pct": 44.56066945606695,
+  "inner_bot_pct": 89.9581589958159,
+  "verses": 956,
+  "dropped_weak_align": 0
+ },
+ "_pooled_core": {
+  "bots": 14903,
+  "violations": {
+   "TH-KL-05": 2387,
+   "TH-KL-01": 2789,
+   "TH-KL-02": 223,
+   "TH-KL-04": 879,
+   "TH-KL-03": 1477,
+   "TH-KL-06": 551,
+   "TH-KL-10": 919
+  },
+  "syllables": {
+   "2": 2,
+   "3": 14,
+   "4": 4,
+   "5": 17,
+   "6": 288,
+   "7": 5212,
+   "8": 35354,
+   "9": 16292,
+   "10": 2175,
+   "11": 234,
+   "12": 19,
+   "13": 1
+  },
+  "inner_verse_pct": 58.17117358921023,
+  "inner_bot_pct": 98.13460377105281,
+  "verses": 59612
+ }
+}
