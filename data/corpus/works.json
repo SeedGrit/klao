@@ -1,0 +1,357 @@
+{
+ "works": [
+  {
+   "id": "nirat-mueang-klaeng",
+   "title": "นิราศเมืองแกลง",
+   "year": "๒๓๕๐",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 249,
+   "bot_full": 247,
+   "verses": 992,
+   "ragged_verses": 1,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.931,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-mueang-klaeng.jsonl"
+  },
+  {
+   "id": "nirat-phra-bat",
+   "title": "นิราศพระบาท",
+   "year": "๒๓๕๐",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 231,
+   "bot_full": 230,
+   "verses": 923,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.943,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-phra-bat.jsonl"
+  },
+  {
+   "id": "nirat-phu-khao-thong",
+   "title": "นิราศภูเขาทอง",
+   "year": "๒๓๗๑",
+   "tier": "core",
+   "note": "หมุดคาลิเบรตเดิมของ references/klon-paet.md",
+   "chapters": 1,
+   "bot": 88,
+   "bot_full": 87,
+   "verses": 351,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.954,
+   "align_weak_chapters": 0,
+   "footnotes": 1,
+   "file": "nirat-phu-khao-thong.jsonl"
+  },
+  {
+   "id": "nirat-wat-chao-fa",
+   "title": "นิราศวัดเจ้าฟ้า",
+   "year": "ราว ๒๓๗๙",
+   "tier": "core",
+   "note": "แต่งเป็นสำนวนเณรพัดผู้เป็นบุตร แต่กรมพระยาดำรงฯ ระบุว่าท่านแต่งเอง",
+   "chapters": 1,
+   "bot": 235,
+   "bot_full": 233,
+   "verses": 936,
+   "ragged_verses": 1,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.931,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-wat-chao-fa.jsonl"
+  },
+  {
+   "id": "nirat-i-nao",
+   "title": "นิราศอิเหนา",
+   "year": "",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 101,
+   "bot_full": 100,
+   "verses": 403,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.88,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-i-nao.jsonl"
+  },
+  {
+   "id": "nirat-phra-pathom",
+   "title": "นิราศพระประธม",
+   "year": "๒๓๘๕",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 224,
+   "bot_full": 223,
+   "verses": 895,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.897,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-phra-pathom.jsonl"
+  },
+  {
+   "id": "nirat-mueang-phet",
+   "title": "นิราศเมืองเพ็ชร",
+   "year": "๒๓๘๘-๙๒",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 209,
+   "bot_full": 208,
+   "verses": 835,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.909,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-mueang-phet.jsonl"
+  },
+  {
+   "id": "ramphan-philap",
+   "title": "รำพันพิลาป",
+   "year": "๒๓๘๕",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 219,
+   "bot_full": 218,
+   "verses": 877,
+   "ragged_verses": 1,
+   "align_offsets": {
+    "0": 1
+   },
+   "align_score": 0.367,
+   "align_weak_chapters": 1,
+   "footnotes": 52,
+   "file": "ramphan-philap.jsonl"
+  },
+  {
+   "id": "kho-but",
+   "title": "โคบุตร",
+   "year": "ก่อน ๒๓๕๐",
+   "tier": "core",
+   "note": "งานเก่าที่สุดที่ยังมีฉบับ ๘ เล่มสมุดไทย",
+   "chapters": 14,
+   "bot": 1325,
+   "bot_full": 1307,
+   "verses": 5249,
+   "ragged_verses": 7,
+   "align_offsets": {
+    "0": 2,
+    "1": 10,
+    "2": 2
+   },
+   "align_score": 0.681,
+   "align_weak_chapters": 4,
+   "footnotes": 42,
+   "file": "kho-but.jsonl"
+  },
+  {
+   "id": "phra-aphai-mani",
+   "title": "พระอภัยมณี ตอนที่ ๑–๖๔",
+   "year": "ร.๒–ร.๓",
+   "tier": "core",
+   "note": "ภาคต้นที่หอพระสมุดฯ ชำระเป็นสำนวนสุนทรภู่ จบที่พระอภัยมณีออกบวช (= ๔๙ เล่มสมุดไทยที่ท่านตั้งใจให้จบ) รวม ๒๕,๐๙๘ คำกลอนตามคำนำ ๒๕๔๔",
+   "chapters": 64,
+   "bot": 12556,
+   "bot_full": 12546,
+   "verses": 50199,
+   "ragged_verses": 4,
+   "align_offsets": {
+    "3": 1,
+    "0": 56,
+    "2": 1,
+    "1": 6
+   },
+   "align_score": 0.914,
+   "align_weak_chapters": 1,
+   "footnotes": 0,
+   "file": "phra-aphai-mani.jsonl"
+  },
+  {
+   "id": "sing-kraiphop",
+   "title": "สิงหไกรภพ",
+   "year": "ร.๒",
+   "tier": "attrib",
+   "note": "คำอธิบายในเล่ม: ท่านแต่งไว้เพียง ๑๕ เล่มสมุดไทย ฉบับพิมพ์ ๑๙ ตอน แบ่งเส้นด้วยเลขตอนไม่ได้",
+   "chapters": 19,
+   "bot": 3403,
+   "bot_full": 3376,
+   "verses": 13546,
+   "ragged_verses": 16,
+   "align_offsets": {
+    "1": 10,
+    "2": 5,
+    "3": 2,
+    "0": 2
+   },
+   "align_score": 0.61,
+   "align_weak_chapters": 7,
+   "footnotes": 130,
+   "file": "sing-kraiphop.jsonl"
+  },
+  {
+   "id": "laksanawong",
+   "title": "ลักษณวงศ์",
+   "year": "",
+   "tier": "attrib",
+   "note": "ประวัติสุนทรภู่: ๙ เล่มสมุดไทย เป็นสำนวนแต่งต่ออีก ๓๐ เล่ม ฉบับพิมพ์รวมทั้งสองส่วน",
+   "chapters": 20,
+   "bot": 2335,
+   "bot_full": 2304,
+   "verses": 9267,
+   "ragged_verses": 25,
+   "align_offsets": {
+    "2": 6,
+    "1": 10,
+    "0": 3,
+    "3": 1
+   },
+   "align_score": 0.552,
+   "align_weak_chapters": 8,
+   "footnotes": 146,
+   "file": "laksanawong.jsonl"
+  },
+  {
+   "id": "sawatdiraksa",
+   "title": "สวัสดิรักษา",
+   "year": "๒๓๖๕-๗",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 36,
+   "bot_full": 35,
+   "verses": 143,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.943,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "sawatdiraksa.jsonl"
+  },
+  {
+   "id": "phleng-yao-thawai-owat",
+   "title": "เพลงยาวถวายโอวาท",
+   "year": "ราว ๒๓๗๓",
+   "tier": "core",
+   "chapters": 1,
+   "bot": 77,
+   "bot_full": 75,
+   "verses": 306,
+   "ragged_verses": 3,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.853,
+   "align_weak_chapters": 0,
+   "footnotes": 5,
+   "file": "phleng-yao-thawai-owat.jsonl"
+  },
+  {
+   "id": "suphasit-son-satri",
+   "title": "สุภาษิตสอนสตรี",
+   "year": "๒๓๘๐-๓",
+   "tier": "attrib",
+   "note": "กรมพระยาดำรงฯ นับเป็นสุภาษิตเรื่องที่ ๓ ของท่าน นักวิชาการรุ่นหลังโต้ว่าเป็นของ 'ภู่' คนอื่น",
+   "chapters": 1,
+   "bot": 201,
+   "bot_full": 200,
+   "verses": 828,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.97,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "suphasit-son-satri.jsonl"
+  },
+  {
+   "id": "phra-aphai-mani-later",
+   "title": "พระอภัยมณี ตอนที่ ๖๕–๑๓๒",
+   "year": "",
+   "tier": "other",
+   "note": "คำนำเมื่อพิมพ์ครั้งแรก: 'มีสำนวนกลอนของผู้อื่นสลับซับซ้อนปะปนกัน' ท่านแต่งเองบ้าง วานศิษย์แต่งบ้าง",
+   "chapters": 69,
+   "bot": 11806,
+   "bot_full": 11804,
+   "verses": 47219,
+   "ragged_verses": 2,
+   "align_offsets": {
+    "0": 68,
+    "1": 1
+   },
+   "align_score": 0.906,
+   "align_weak_chapters": 1,
+   "footnotes": 3,
+   "file": "phra-aphai-mani-later.jsonl"
+  },
+  {
+   "id": "chantakhrop",
+   "title": "จันทโครบ",
+   "year": "",
+   "tier": "other",
+   "note": "กรมพระยาดำรงฯ: 'ไม่พบกลอนตอนใดที่จะเชื่อได้ว่าเป็นสำนวนกลอนสุนทรภู่สักแห่งเดียว'",
+   "chapters": 4,
+   "bot": 388,
+   "bot_full": 383,
+   "verses": 1537,
+   "ragged_verses": 3,
+   "align_offsets": {
+    "1": 2,
+    "0": 2
+   },
+   "align_score": 0.662,
+   "align_weak_chapters": 1,
+   "footnotes": 18,
+   "file": "chantakhrop.jsonl"
+  },
+  {
+   "id": "nirat-phra-thaen-dong-rang",
+   "title": "นิราศพระแท่นดงรัง",
+   "year": "",
+   "tier": "other",
+   "note": "บัญชี ๒๔ เรื่องนับเป็นนิราศเรื่องที่ ๗ ของท่าน แต่ฉบับวชิรญาณขึ้นชื่อสามเณรกลั่น — กลอนแปดร่วมสมัยที่ใช้เป็นชุดควบคุมของตัวตรวจคำนอกคลัง",
+   "chapters": 1,
+   "bot": 240,
+   "bot_full": 239,
+   "verses": 959,
+   "ragged_verses": 0,
+   "align_offsets": {
+    "3": 1
+   },
+   "align_score": 0.912,
+   "align_weak_chapters": 0,
+   "footnotes": 0,
+   "file": "nirat-phra-thaen-dong-rang.jsonl"
+  }
+ ],
+ "total": {
+  "bot": 33923,
+  "bot_full": 33815,
+  "verses": 135465,
+  "ragged": 63
+ }
+}

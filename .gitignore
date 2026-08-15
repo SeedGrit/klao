@@ -1,3 +1,12 @@
 .DS_Store
 references/repos.local.md
 *.local.*
+__pycache__/
+*.pyc
+
+# ไฟล์ดิบที่ดึงจากวชิรญาณ — สร้างใหม่ได้ด้วย tools/fetch_sunthorn.py
+# ไม่ commit เพราะเป็นของกลางทาง 12MB ส่วนคลังที่หั่นบทแล้วใน data/corpus/ commit ไว้
+data/raw/
+# log ของการ build
+data/corpus_build.txt
+data/lexicon_build.txt
