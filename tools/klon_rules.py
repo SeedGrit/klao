@@ -192,6 +192,40 @@ def end_collision(bot: list[str]) -> list[str]:
     return bad
 
 
+def rong_ends_high(bot: list[str]) -> list[str]:
+    """TH-KL-12 ท้ายวรรครองห้ามลงจัตวา — สุนทรภู่ทำ 0.87%
+
+    แยกออกมาจาก TH-KL-05 เป็นข้อของตัวเองระดับ hard เพราะของจริงที่พลาด
+    (`มีมากหลาย` จัตวา / `ไม่ทิ้งสาย` จัตวา) เครื่องฟ้องไว้แล้วในฐานะ soft
+    **แล้วคนอ่านรายงานปล่อยผ่าน** — ระดับของกฎคือสิ่งที่ตัดสินว่าคนจะแก้หรือไม่แก้
+    """
+    if len(bot) != 4:
+        return []
+    syl = syllables_of_verse(bot[2])
+    if syl and tone(syl[-1]) == "จัตวา":
+        return [f"ท้ายวรรครองลงจัตวา: {syl[-1]}"]
+    return []
+
+
+def early_rhyme_in_rong(bot: list[str]) -> list[str]:
+    """TH-KL-13 วรรครองห้ามดักสัมผัสก่อนคำท้าย — สุนทรภู่ทำ 10.3% (เพดานบน)
+
+    ⚠️ ตัวนับจับพยางค์แรกของคำสองพยางค์ด้วย (`ธา` ใน `ธารา`) ซึ่งไม่ใช่การดัก
+    จริง จึงข้ามคู่ที่อยู่ติดกัน แล้วยังเหลือ false positive อยู่ **ต้องเปิดดู**
+    """
+    if len(bot) != 4:
+        return []
+    syl = syllables_of_verse(bot[2])
+    if len(syl) < 3:
+        return []
+    hits = [
+        syl[i]
+        for i in range(len(syl) - 2)  # ข้ามพยางค์ที่ติดกับคำท้าย
+        if rhymes(syl[i], syl[-1])
+    ]
+    return [f"{h} ดักสัมผัสก่อน {syl[-1]}" for h in hits]
+
+
 ALL = {
     "TH-KL-01": outer_rhyme,
     "TH-KL-02": repeated_rhyme_word,
@@ -200,8 +234,11 @@ ALL = {
     "TH-KL-05": tone_at_end,
     "TH-KL-06": syllable_count,
     "TH-KL-10": end_collision,
+    "TH-KL-12": rong_ends_high,
+    "TH-KL-13": early_rhyme_in_rong,
 }
-HARD = {"TH-KL-01", "TH-KL-02", "TH-KL-07", "TH-KL-08", "TH-KL-09", "TH-KL-10"}
+HARD = {"TH-KL-01", "TH-KL-02", "TH-KL-07", "TH-KL-08", "TH-KL-09", "TH-KL-10",
+        "TH-KL-12"}
 
 
 def check_bot(bot: list[str]) -> dict[str, list[str]]:
