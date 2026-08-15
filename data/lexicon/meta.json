@@ -1,0 +1,105 @@
+{
+ "tiers_included": [
+  "core"
+ ],
+ "works_used": [
+  {
+   "id": "nirat-mueang-klaeng",
+   "title": "นิราศเมืองแกลง",
+   "bot": 247
+  },
+  {
+   "id": "nirat-phra-bat",
+   "title": "นิราศพระบาท",
+   "bot": 230
+  },
+  {
+   "id": "nirat-phu-khao-thong",
+   "title": "นิราศภูเขาทอง",
+   "bot": 87
+  },
+  {
+   "id": "nirat-wat-chao-fa",
+   "title": "นิราศวัดเจ้าฟ้า",
+   "bot": 233
+  },
+  {
+   "id": "nirat-i-nao",
+   "title": "นิราศอิเหนา",
+   "bot": 100
+  },
+  {
+   "id": "nirat-phra-pathom",
+   "title": "นิราศพระประธม",
+   "bot": 223
+  },
+  {
+   "id": "nirat-mueang-phet",
+   "title": "นิราศเมืองเพ็ชร",
+   "bot": 208
+  },
+  {
+   "id": "ramphan-philap",
+   "title": "รำพันพิลาป",
+   "bot": 218
+  },
+  {
+   "id": "kho-but",
+   "title": "โคบุตร",
+   "bot": 1307
+  },
+  {
+   "id": "phra-aphai-mani",
+   "title": "พระอภัยมณี ตอนที่ ๑–๖๔",
+   "bot": 12546
+  },
+  {
+   "id": "sawatdiraksa",
+   "title": "สวัสดิรักษา",
+   "bot": 35
+  },
+  {
+   "id": "phleng-yao-thawai-owat",
+   "title": "เพลงยาวถวายโอวาท",
+   "bot": 75
+  }
+ ],
+ "works_skipped": [
+  {
+   "id": "sing-kraiphop",
+   "title": "สิงหไกรภพ",
+   "tier": "attrib"
+  },
+  {
+   "id": "laksanawong",
+   "title": "ลักษณวงศ์",
+   "tier": "attrib"
+  },
+  {
+   "id": "suphasit-son-satri",
+   "title": "สุภาษิตสอนสตรี",
+   "tier": "attrib"
+  },
+  {
+   "id": "phra-aphai-mani-later",
+   "title": "พระอภัยมณี ตอนที่ ๖๕–๑๓๒",
+   "tier": "other"
+  },
+  {
+   "id": "chantakhrop",
+   "title": "จันทโครบ",
+   "tier": "other"
+  },
+  {
+   "id": "nirat-phra-thaen-dong-rang",
+   "title": "นิราศพระแท่นดงรัง",
+   "tier": "other"
+  }
+ ],
+ "word_types": 13436,
+ "word_tokens": 394224,
+ "syllable_types": 5714,
+ "syllable_tokens": 512716,
+ "rhyme_keys": 154,
+ "tokenizer": "pythainlp.word_tokenize (newmm, default dict)"
+}
