@@ -23,13 +23,27 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import klon_rules as R  # noqa: E402
-from thai_prosody import count_syllables, rhyme_key, syllables_of_verse  # noqa: E402
+from thai_prosody import (  # noqa: E402
+    count_syllables,
+    rhyme_key,
+    syllables_of_verse,
+    tone,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 LEX = ROOT / "data" / "lexicon"
 
 # เกณฑ์จากคลังสุนทรภู่ — ตัวเลขจริงอยู่ใน data/calibration.txt
 INNER_RHYME_MIN = 0.60
+
+# เสียงที่แต่ละช่องรับได้ (klon-paet TH-KL-05 + TH-KL-12)
+# **จัตวาไม่อยู่ในวรรครองและวรรคส่ง** ซึ่งเป็นข้อที่คนหยิบคำผิดบ่อยที่สุด
+SLOT_OK = {
+    "วรรคสดับ (1)": {"เอก", "โท", "ตรี", "จัตวา"},
+    "วรรครับ (2)": {"จัตวา", "เอก", "โท"},
+    "วรรครอง (3)": {"สามัญ", "ตรี"},
+    "วรรคส่ง (4)": {"สามัญ", "ตรี"},
+}
 
 
 def load_lexicon() -> tuple[dict, dict, dict, dict]:
@@ -145,10 +159,24 @@ def main() -> int:
     words, syls, rhymes, meta = load_lexicon()
 
     if args.rhyme:
-        found = suggest(args.rhyme, rhymes, syls, words, limit=60)
+        found = suggest(args.rhyme, rhymes, syls, words, limit=200)
         print(f"คีย์สัมผัสของ {args.rhyme}: {rhyme_key(args.rhyme)}")
-        print(f"พยางค์ในคลัง {len(found)} ตัว (เรียงตามที่ท่านใช้บ่อย):")
-        print("  " + " · ".join(f"{s}({syls.get(s, 0)})" for s in found))
+        print(f"พยางค์ในคลัง {len(found)} ตัว\n")
+        # ⚠️ แยกตามเสียงเสมอ ห้ามพิมพ์เป็นกองเดียว — ช่องที่วางได้ขึ้นกับเสียง
+        # ไม่ใช่ความถี่ ของจริงที่พลาด: หยิบ `สาย` (จัตวา) ไปวางท้ายวรรครอง
+        # ทั้งที่ TH-KL-12 ห้าม เพราะรายการเดิมเรียงตามความถี่อย่างเดียว
+        by_tone: dict[str, list[str]] = {}
+        for s in found:
+            by_tone.setdefault(tone(s), []).append(s)
+        for t in ("สามัญ", "ตรี", "จัตวา", "เอก", "โท"):
+            if t not in by_tone:
+                continue
+            slots = [name for name, ok in SLOT_OK.items() if t in ok]
+            tag = " · ".join(slots) if slots else "ไม่มีช่องไหนรับเสียงนี้"
+            print(f"  [{t}] วางได้ที่: {tag}")
+            print("    " + " · ".join(f"{s}({syls.get(s, 0)})" for s in by_tone[t][:24]))
+        print("\n  ⚠️ ท้ายวรรครองห้ามจัตวา (TH-KL-12 · ท่านทำ 0.87%) — คู่ R2 ที่ปลอดภัย"
+              "\n     ที่สุดคือ วรรครับ จัตวา → วรรครอง สามัญ (ท่านทำ 72.1%)")
         return 0
 
     if args.word:
